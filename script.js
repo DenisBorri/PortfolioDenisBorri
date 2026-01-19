@@ -270,6 +270,16 @@ function updateLanguage(lang) {
     } else {
         langToggleBtn.textContent = 'ES';
     }
+
+    // Update CV Link based on language
+    const cvBtn = document.getElementById('cv-btn');
+    if (cvBtn) {
+        if (lang === 'es') {
+            cvBtn.setAttribute('href', 'assets/CV_Denis_Borri.pdf');
+        } else {
+            cvBtn.setAttribute('href', 'assets/CV_Denis_Borri_EN.pdf');
+        }
+    }
 }
 
 if (langToggleBtn) {
@@ -304,15 +314,3 @@ links.forEach(link => {
     });
 });
 
-
-// --- CV Button Logic ---
-const cvBtn = document.getElementById('cv-btn');
-if (cvBtn) {
-    cvBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        const msg = currentLang === 'es'
-            ? "El Curriculum Vitae se está actualizando. Por favor, vuelve pronto."
-            : "The Curriculum Vitae is being updated. Please come back soon.";
-        alert(msg);
-    });
-}
