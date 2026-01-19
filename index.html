@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity | Desarrollador & Diseñador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicon/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <canvas id="antigravity-bg"></canvas>
+
+    <header class="glass-header">
+        <nav>
+            <div class="logo">PORTFOLIO</div>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Habilidades</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+                <li><button id="lang-toggle" class="lang-btn">EN</button></li>
+                <li><a href="#" id="cv-btn" class="cv-btn">CV</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content" data-tilt>
+                <div class="subtitle" data-i18n="hero_subtitle">Denis Leandro Borri</div>
+                <h1 data-i18n="hero_title">ANALISTA FUNCIONAL <br><span class="highlight">EN SISTEMAS
+                        INFORMATICOS</span></h1>
+                <p data-i18n="hero_desc">Desarrollador Frontend / Backend & Desarrollador UI/UX</p>
+            </div>
+            <div class="scroll-indicator">
+                <span data-i18n="hero_explore">Explorar</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 class="section-title" data-i18n="about_title">01. Sobre Mí</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_text1">Soy Analista En Sistemas Informáticos y Programador, enfocado en el
+                        desarrollo web y en la creación de soluciones digitales funcionales. Trabajo con HTML, CSS y
+                        JavaScript, combinando una base técnica sólida con una mirada práctica orientada a resolver
+                        problemas reales.</p>
+                    <p data-i18n="about_text2">Tengo experiencia desarrollando proyectos propios y emprendimientos, lo
+                        que me permitió integrar tecnología, organización y pensamiento estratégico. Me motiva aprender
+                        de forma constante y aplicar la programación para optimizar procesos y generar valor.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="avatar-container glass-card float-anim">
+                        <img src="assets/images/profile.jpg" alt="Denis Leandro Borri" class="avatar-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2 class="section-title" data-i18n="skills_title">02. Habilidades</h2>
+            <div class="skills-container">
+                <!-- Frontend Column -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title" data-i18n="skills_frontend">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="assets/icons/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/javascript-original.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/react-original.svg" alt="React">
+                            <span>React</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Backend Column -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title" data-i18n="skills_backend">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="assets/icons/nodejs-original.svg" alt="Node.js">
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/python-original.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/mysql-original.svg" alt="SQL">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/microsoftsqlserver-original.svg" alt="SQL Server">
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/visualbasic-original.svg" alt="Visual Basic">
+                            <span>Visual Basic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Column -->
+                <div class="skill-category glass-card">
+                    <h3 class="category-title" data-i18n="skills_tools">Herramientas</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="assets/icons/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/github-original.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/firebase-original.svg" alt="Firebase">
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/icons/bootstrap-original.svg" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2 class="section-title" data-i18n="projects_title">03. Proyectos Seleccionados</h2>
+            <div class="projects-grid">
+                <!-- Project 1: AB Shine -->
+                <article class="project-card glass-card">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <img src="assets/images/abshine-logo.png" alt="AB Shine Logo" class="project-logo">
+                            <h3>ABShine</h3>
+                        </div>
+                        <p data-i18n="project1_desc">Sitio web desarrollado para AB Shine. Solución completa de
+                            presencia digital.</p>
+                        <div class="project-tags">
+                            <span><img src="assets/icons/html5-original.svg" alt="HTML" style="width:14px;">
+                                HTML</span>
+                            <span><img src="assets/icons/css3-original.svg" alt="CSS" style="width:14px;">
+                                CSS</span>
+                            <span><img src="assets/icons/javascript-original.svg" alt="JS" style="width:14px;">
+                                JavaScript</span>
+                        </div>
+                        <div class="project-links-container">
+                            <a href="https://github.com/alebati123/SitioWeb_ABshine.git" target="_blank"
+                                class="small-btn">
+                                <img src="assets/icons/github-original.svg" alt="GitHub"
+                                    style="width:16px; margin-right:5px; filter: invert(1);"> GitHub
+                            </a>
+                            <a href="https://abshine.netlify.app/" target="_blank" class="small-btn">
+                                <span>🚀</span> Online
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Coming Soon -->
+                <article class="project-card glass-card coming-soon">
+                    <div class="project-info">
+                        <h3 data-i18n="project_future_title">Próximamente</h3>
+                        <p data-i18n="project_future_desc">Trabajando en nuevas ideas y soluciones innovadoras.</p>
+                        <div class="project-tags">
+                            <span>...</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Coming Soon -->
+                <article class="project-card glass-card coming-soon">
+                    <div class="project-info">
+                        <h3 data-i18n="project_future_title">Próximamente</h3>
+                        <p data-i18n="project_future_desc">Trabajando en nuevas ideas y soluciones innovadoras.</p>
+                        <div class="project-tags">
+                            <span>...</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2 class="section-title" data-i18n="contact_title">04. Contacto</h2>
+            <div class="contact-wrapper glass-card">
+                <p data-i18n="contact_text">¿Tienes un proyecto en mente que desafíe la gravedad? Hablemos.</p>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=denisborri6@gmail.com&su=Contacto%20desde%20Portfolio"
+                    target="_blank" class="cta-button" data-i18n="contact_cta">Iniciar
+                    Conversación</a>
+
+                <div class="social-links">
+                    <a href="https://github.com/DenisBorri" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/denis-borri-865b2b15b/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/borrdenis/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Denis Borri. Todos los derechos reservados. <span style="color:var(--accent-color)"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
